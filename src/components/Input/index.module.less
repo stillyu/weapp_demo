@@ -1,0 +1,27 @@
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &.disabled {
+    opacity: 0.3;
+  }
+  .input {
+    flex: 1;
+    z-index: 9;
+  }
+  .addonAfter {
+    margin-left: 12px;
+    color: #333;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .placeholder {
+    font-size: 28px;
+    font-weight: 400;
+    color: #c8c9cc;
+    position: absolute;
+    pointer-events: none;
+  }
+}

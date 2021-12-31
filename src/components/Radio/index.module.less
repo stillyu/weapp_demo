@@ -1,0 +1,35 @@
+.radio {
+  display: flex;
+  font-size: 28px;
+  font-weight: 400;
+  color: #323233;
+  flex-wrap: wrap;
+  &.disabled {
+    .radioItem {
+      opacity: 0.3;
+    }
+  }
+  .radioItem {
+    height: 60px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    background: #ffffff;
+    border-radius: 30px;
+    // prettier-ignore
+    border: 1PX solid #cccccc;
+    font-size: 28px;
+    color: #333333;
+    margin-right: 18px;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+    &.checked {
+      background: #2a83fe;
+      border-color: #2a83fe;
+      color: #fff;
+    }
+  }
+}
